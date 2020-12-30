@@ -6,11 +6,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.0] - 2020-12-30
+
+### Added
+
+- Github action workflow to build the base image every 7 days. ([#1](https://github.com/glitchcrab/action-hass-check-config/pull/1))
+
 ## [0.0.1] - 2020-12-30
 
 ### Added
 
 - Initial release.
 
-[Unreleased]: https://github.com//glitchcrab/action-hass-check-config/compare/v0.0.1...HEAD
+[Unreleased]: https://github.com//glitchcrab/action-hass-check-config/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/glitchcrab/action-hass-check-config/releases/tag/v0.1.0
 [0.0.1]: https://github.com/glitchcrab/action-hass-check-config/releases/tag/v0.0.1

@@ -1,4 +1,4 @@
-Home Assistant Config Check
+# Home Assistant config validation action
 
 This action checks your configuration files against the specified Home Assistant version.
 
@@ -7,23 +7,19 @@ If you have custom_components in your repository it will also install the requir
 ## Basic example
 
 ```yaml
-name: "Run action"
+name: "run checks"
+
 on:
-  push:
-    branch:
-      - master
   pull_request:
-    branch:
-      - master
 
 jobs:
   check:
-    name: Home Assistant Config Check
+    name: Home Assistant config check
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
+    - name: checkout
       uses: actions/checkout@master
-    - name: Run Config Check
+    - name: check config
       uses: glitchcrab/action-hass-check-config@master
 ```
 
@@ -37,26 +33,22 @@ input | description
 ### Example with inputs
 
 ```yaml
-name: "Run action"
+name: "run checks"
+
 on:
-  push:
-    branch:
-      - master
   pull_request:
-    branch:
-      - master
 
 jobs:
   check:
-    name: Home Assistant Config Check
+    name: Home Assistant config check
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
+    - name: checkout
       uses: actions/checkout@master
-    - name: Run Config Check
+    - name: check config
       uses: glitcrab/action-hass-check-config@master
       with:
-        version: 0.115.6
+        version: 0.117.6
         config_path: config
 ```
 
