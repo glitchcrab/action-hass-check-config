@@ -1,0 +1,17 @@
+name: "Home-Assistant Config Validator"
+author: "glitchcrab <hello@simonweald.com>"
+description: "Check your configuration against any Home Assistant version."
+inputs:
+  version:
+    description: "The version of Home Assistant to use, e.g. `0.115.6`. If not provided, the latest stable release will be used."
+    required: false
+  config_path:
+    description: "Relative path to your configuration directory if not in the root."
+    required: false
+    default: ''
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'home'
+  color: 'blue'
