@@ -24,7 +24,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
     - name: Run Config Check
-      uses: glitchcrab/action-ha-config-check@master
+      uses: glitchcrab/action-hass-check-config@master
 ```
 
 ## Inputs
@@ -54,7 +54,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
     - name: Run Config Check
-      uses: glitcrab/action-ha-config-check@master
+      uses: glitcrab/action-hass-check-config@master
       with:
         version: 0.115.6
         config_path: config
