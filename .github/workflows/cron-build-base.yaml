@@ -28,3 +28,14 @@ jobs:
           file: ./base_img/Dockerfile
           push: true
           tags: glitchcrab/hass-config-check-base:latest
+      - name: 'update repo on build'
+        run: echo $(date) > LAST_UPDATED
+      - name: 'commit update file'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -m "apply changes" --allow-empty LAST_UPDATED
+      - name: 'push changes'
+        uses: ad-m/github-push-action@v0.5.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
