@@ -1,4 +1,4 @@
-FROM bitnami/python:2
+FROM ubuntu:20.04
 
 RUN apt-get update && \
     apt-get -y --no-install-recommends install \
