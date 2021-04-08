@@ -5,6 +5,7 @@ RUN apt-get update && \
       apt-get -y --no-install-recommends install \
       autoconf \
       build-essential \
+      git \
       jq \
       libxml2 \
       libxslt1.1 \
