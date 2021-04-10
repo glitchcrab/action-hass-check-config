@@ -7,6 +7,7 @@ RUN apt-get update && \
       python3-pip \
       python3-setuptools \
       python3-wheel \
+      git \
       jq \
       libxml2 \
       libxslt1.1 \
