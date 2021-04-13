@@ -12,4 +12,5 @@ RUN apt-get update && \
       zlib1g-dev && \
     apt-get clean && \
     apt-get autoremove -y && \
-    rm -rf /var/lib/apt/lists/*
+    rm -rf /var/lib/apt/lists/* && \
+    python3.9 -m venv /hass-venv
