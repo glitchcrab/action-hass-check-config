@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM python:3.9-buster
 
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive \
@@ -9,12 +9,8 @@ RUN apt-get update && \
       jq \
       libxml2 \
       libxslt1.1 \
-      python3 \
-      python3-dev \
-      python3-pip \
-      python3-setuptools \
-      python3-wheel \
       zlib1g-dev && \
     apt-get clean && \
     apt-get autoremove -y && \
-    rm -rf /var/lib/apt/lists/*
+    rm -rf /var/lib/apt/lists/* && \
+    python3.9 -m venv /hass-venv
