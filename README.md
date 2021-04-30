@@ -46,7 +46,7 @@ jobs:
     - name: checkout
       uses: actions/checkout@master
     - name: check config
-      uses: glitcrab/action-hass-check-config@main
+      uses: glitchcrab/action-hass-check-config@main
       with:
         version: 2021.1.5
         config_path: config
