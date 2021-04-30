@@ -20,14 +20,14 @@ jobs:
     - name: checkout
       uses: actions/checkout@master
     - name: check config
-      uses: glitchcrab/action-hass-check-config@master
+      uses: glitchcrab/action-hass-check-config@main
 ```
 
 ## Inputs
 
 input | description
 -- | --
-`version` | The version of Home Assistant to test against, e.g. `0.115.6` (if not provided, the latest stable version will be used).
+`version` | The version of Home Assistant to test against, e.g. `2021.1.5` (if not provided, the latest stable version will be used).
 `config_path` | Relative path to your configuration if not in the root of the repository.
 
 ### Example with inputs
@@ -46,9 +46,9 @@ jobs:
     - name: checkout
       uses: actions/checkout@master
     - name: check config
-      uses: glitcrab/action-hass-check-config@master
+      uses: glitcrab/action-hass-check-config@main
       with:
-        version: 0.117.6
+        version: 2021.1.5
         config_path: config
 ```
 
