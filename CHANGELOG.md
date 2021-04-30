@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.1] - 2021-04-30
+
+### Changed
+
+- Ensure pip is always updated duing the base image build. ([#10](https://github.com/glitchcrab/action-hass-check-config/pull/10))
+
 ## [0.2.0] - 2021-04-13
 
 ### Changed
